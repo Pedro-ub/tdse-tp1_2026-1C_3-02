@@ -21,9 +21,13 @@ ST_BTN_DOWN: estado final
 
 - Signals:
 
-EV_SYS_BTNDOWN=1 if pulsador apretado
+EV_SYS_CAM=1 si el pulsador está apretado
 
-EV_SYS_BTNUP=1 if pulsador no apretado
+EV_SYS_TICKET=1 si el pulsador está apretado
+
+EV_SYS_COIL=1 si el pulsador está apretado
+
+
 
 - Acciones
   
