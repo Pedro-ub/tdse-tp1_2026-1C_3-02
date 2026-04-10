@@ -1,7 +1,31 @@
-Implementacion de Parking Ticket Dispenser (Machine)
-Es un sistema que consta de tres etapas: escrutar, procesar y actuar.
-Escrutar: Consta de tres sensores: la camara, el boton y la bobina, que seran modelizados por tres pulsadores.
-Procesamiento: es la placa que se encarga de procesar los estados de la etapa anterior. Por ejemplo cuando un auto llega lo detecta la camara (se cierra el pulsador) y esa accion activa un mensaje de bienvenida en el display.
-Actuador: Consta de cuatro actuadores: el display, impresora, barrera y el servidor, que seran modelizados por cuatro leds.
+Implementación de Parking Ticket Dispenser (Entry Machine)
 
-Proceso: Cuando el auto llega a la entrada, la maquina lo procesa mediante la camara y envia un mensaje de bienvenida por el display. Luego el conductor apreta el boton, el cual causa la impresion del ticket y la apertura de la barrera. Por ultimo el auto sale, y es detectado por la bobina que ya no se encuentra ahi para poder cerrar la barrera. Simultaneamente de cerrar la barrera la informacion de ingreso y los datos del auto son enviados al servidor.
+El sistema se divide en tres etapas:
+
+- Escrutar (Sensor)
+Se utilizan tres sensores, modelizados mediante pulsadores:
+Cámara → detecta presencia del vehículo
+Botón → interacción del usuario
+Bobina → detecta salida del vehículo
+
+- Procesar (System)
+Es la unidad lógica que procesa los eventos generados por los sensores.
+Ejemplo:
+Cuando la cámara detecta un vehículo → se genera un mensaje de bienvenida en el display
+Cuando se presiona el botón → se inicia la emisión del ticket y la apertura de la barrera
+
+-Actuar (Actuator)
+Se utilizan cuatro actuadores modelizados con LEDs:
+Display
+Impresora
+Barrera
+Servidor
+
+-Proceso completo
+El vehículo llega → la cámara lo detecta
+Se muestra mensaje de bienvenida en el display
+El conductor presiona el botón
+Se imprime el ticket y se abre la barrera
+El vehículo avanza y deja la bobina
+Se cierra la barrera
+Se envían los datos al servidor
