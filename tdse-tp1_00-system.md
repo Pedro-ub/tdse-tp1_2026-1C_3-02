@@ -1,19 +1,19 @@
-Eventos y acciones del System
+### Eventos y acciones del System
 
-- Eventos que recibe
+### Eventos que recibe
   
-EV_SYS_BTN_DOWN
+- EV_SYS_BTN_DOWN
+- EV_SYS_BTN_UP
 
-EV_SYS_BTN_UP
 
+### Eventos de salida (hacia actuadores)
 
-- Acciones
-  
-Enviar señales al actuador:
+- EV_ACT_DISPLAY_ON
+- EV_ACT_TICKET_PRINT
+- EV_ACT_BARRIER_UP
+- EV_ACT_BARRIER_DOWN
+- EV_ACT_SERVER_SEND
 
-EV_ACT_LED_ON
-
-EV_ACT_LED_OFF
 
 
 
