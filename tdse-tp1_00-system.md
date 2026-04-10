@@ -5,8 +5,7 @@
 ### Eventos de entrada (desde sensores)
 
 - EV_SYS_CAM_ON
-- EV_SYS_BTN_DOWN
-- EV_SYS_BTN_UP
+- EV_SYS_TICKET
 - EV_SYS_COIL_OFF
 
 ---
