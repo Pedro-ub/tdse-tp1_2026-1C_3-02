@@ -20,16 +20,10 @@ ST_BTN_FALLING: estado intermedio (up>down)
 ST_BTN_DOWN: estado final
 
 - Signals:
-  
-EV_SYS_BARRIER=1 if all sensores=1
-
-EV_SYS_DISPLAY=1 if camara=1
-
-EV_SYS_TICKET=1 if boton=1
-
-EV_SYS_DATOS=1 if EV_SYS_BARRIER=1
 
 EV_SYS_BTNDOWN=1 if pulsador apretado
+
+EV_SYS_BTNUP=1 if pulsador no apretado
 
 - Acciones
   
