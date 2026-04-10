@@ -9,6 +9,7 @@ EV_BTN_UP: boton no accionado
 
 EV_BTN_DOWN: boton accionado
 
+
 - Estados:
   
 ST_BTN_UP: estado final
@@ -19,14 +20,20 @@ ST_BTN_FALLING: estado intermedio (up>down)
 
 ST_BTN_DOWN: estado final
 
+
 - Signals:
 
-EV_SYS_CAM=1 si el pulsador está apretado
+EV_SYS_CAM_ON
 
-EV_SYS_TICKET=1 si el pulsador está apretado
+EV_SYS_CAM_OFF
 
-EV_SYS_COIL=1 si el pulsador está apretado
+EV_SYS_TICKET_REQUESTED
 
+EV_SYS_TICKET_NOT_REQUESTED
+
+EV_SYS_COIL_DETECT
+
+EV_SYS_COIL_NOT_DETECT
 
 
 - Acciones
