@@ -41,4 +41,20 @@ raise EV_SYS_BTN_DOWN
 
 raise EV_SYS_BTN_UP
 
+## Tabla de Estados - Sensor (Botón)
+
+| Current State     | Event         | Guard     | Next State      | Actions              |
+|------------------|--------------|----------|-----------------|----------------------|
+| ST_BTN_UP        | EV_BTN_UP    | -        | ST_BTN_UP       | -                    |
+| ST_BTN_UP        | EV_BTN_DOWN  | -        | ST_BTN_FALLING  | tick = DEL_BTN_MAX   |
+| ST_BTN_DOWN      | EV_BTN_UP    | -        | ST_BTN_RISING   | tick = DEL_BTN_MAX   |
+| ST_BTN_DOWN      | EV_BTN_DOWN  | -        | ST_BTN_DOWN     | -                    |
+| ST_BTN_RISING    | EV_BTN_UP    | tick==0  | ST_BTN_UP       | raise EV_SYS_BTN_UP  |
+| ST_BTN_RISING    | EV_BTN_UP    | tick>0   | ST_BTN_RISING   | tick--               |
+| ST_BTN_RISING    | EV_BTN_DOWN  | tick==0  | ST_BTN_DOWN     | -                    |
+| ST_BTN_RISING    | EV_BTN_DOWN  | tick>0   | ST_BTN_RISING   | tick--               |
+| ST_BTN_FALLING   | EV_BTN_UP    | tick==0  | ST_BTN_UP       | -                    |
+| ST_BTN_FALLING   | EV_BTN_UP    | tick>0   | ST_BTN_FALLING  | tick--               |
+| ST_BTN_FALLING   | EV_BTN_DOWN  | tick==0  | ST_BTN_DOWN     | raise EV_SYS_BTNDOWN |
+| ST_BTN_FALLING   | EV_BTN_DOWN  | tick>0   | ST_BTN_FALLING  | tick--               |
 
