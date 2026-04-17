@@ -34,7 +34,7 @@
 | ST_ACT_IDLE         | EV_ACT_DISPLAY_ON            | -               | ST_ACT_DISPLAY_ON     |                              |
 | ST_ACT_DISPLAY_ON   | EV_ACT_TICKET_PRINT          | -               | ST_ACT_TICKET_PRINT   |                              |
 | ST_ACT_TICKET_PRINT | EV_ACT_BARRIER_UP            | -               | ST_ACT_BARRIER_OPEN   |                              |
-| ST_ACT_OPEN_BARRIER | EV_ACT_BARRIER_DOWN          | -               | ST_ACT_BARRIER_DOWN   |                              |
+| ST_ACT_BARRIER_OPEN | EV_ACT_BARRIER_DOWN          | -               | ST_ACT_BARRIER_DOWN   |                              |
 | ST_ACT_BARRIER_DOWN | EV_ACT_DISPLAY_OFF           | -               | ST_ACT_IDLE           |  raise EV_ACT_SERVER_SEND    |
 
 
