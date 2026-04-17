@@ -5,9 +5,7 @@
 ### Eventos de entrada (desde sensores)
 
 - EV_SYS_CAM_ON
-- EV_SYS_CAM_OFF
 - EV_SYS_TICKET_REQUESTED
-- EV_SYS_COIL_DETECT
 - EV_SYS_COIL_NOT_DETECT
 
 ---
@@ -15,7 +13,6 @@
 ### Eventos de salida (hacia actuadores)
 
 - EV_ACT_DISPLAY_ON
-- EV_ACT_DISPLAY_OFF
 - EV_ACT_TICKET_PRINT
 - EV_ACT_BARRIER_UP
 - EV_ACT_BARRIER_DOWN
