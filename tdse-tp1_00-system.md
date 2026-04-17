@@ -17,6 +17,7 @@
 - EV_ACT_BARRIER_UP
 - EV_ACT_BARRIER_DOWN
 - EV_ACT_SERVER_SEND
+- EV_ACT_DISPLAY_OFF
 
 ---
 
@@ -34,7 +35,7 @@
 |----------------|----------------------------- |-----------------|-----------------|-----------|  
 | ST_SYS_IDLE    | EV_SYS_CAM_ON                | -               | ST_SYS_WELCOME  | raise EV_ACT_DISPLAY_ON|
 | ST_SYS_WELCOME | EV_SYS_TICKET_REQUESTED      | -               | ST_SYS_PROCESS  | raise EV_ACT_TICKET_PRINT && EV_ACT_BARRIER_UP |
-| ST_SYS_PROCESS | EV_SYS_COIL_NOT_DETECT       | -               | ST_SYS_IDLE     | raise EV_ACT_BARRIER_DOWN; raise EV_ACT_SERVER_SEND; raise EV_ACT_LED_OFF |
+| ST_SYS_PROCESS | EV_SYS_COIL_NOT_DETECT       | -               | ST_SYS_IDLE     | raise EV_ACT_BARRIER_DOWN; raise EV_ACT_SERVER_SEND; raise EV_ACT_DISPLAY_OFF |
 
 
 
